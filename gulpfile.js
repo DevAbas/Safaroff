@@ -2,6 +2,8 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     concat = require('gulp-concat'),
     compass = require('gulp-compass'),
+    gulpif = require('gulp-if'),
+    uglify = require('gulp-uglify'),
     connect = require('gulp-connect');
 
 var env,
@@ -25,6 +27,7 @@ jsSources = 'components/scripts/*.js';
 gulp.task('concat', function() {
   gulp.src(jsSources)
     .pipe(concat('scripts.js'))
+    .pipe(gulpif(env === 'production',uglify()))
     .pipe(gulp.dest(outputDir + 'js'))
     .pipe(connect.reload())
 });
