@@ -1,0 +1,49 @@
+//mixin for centerer
+@mixin centerer {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//Mixin for background-image
+@mixin bgImage($imgPath){
+  background-image: url(#{$imgPath});
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+//Border mixin
+@mixin myBorder($myColor) {
+  border: 1px solid $myColor;
+}
+
+@mixin rounded($radius: 4px) {
+  -webkit-border-radius: $radius;
+  -o-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin myButton ($borderColor, $widthBtn: 250px, $heightBtn: 50px, $bgColorBtn: transparent, $fColor: $myBlue, $hover: $myBlue, $col: white){
+  @include myBorder($borderColor);
+  @include rounded();
+  width: $widthBtn;
+  height: $heightBtn;
+  padding: 17px 40px;
+  background-color: $bgColorBtn;
+  font: 16px "GothamPro-Light";
+  color: $fColor;
+  -o-transition: background-color .2s ease-in-out;
+  -moz-transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover;
+    color: $col;
+  }
+  &:focus {
+    outline: none;
+  }
+}

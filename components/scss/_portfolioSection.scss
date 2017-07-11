@@ -1,0 +1,69 @@
+@import "myVariables";
+
+section#our-portfolio {
+  max-width: 100%;
+  padding-top: 165px;
+
+  //Figure span
+  span.figure {
+    display: block;
+    font: 79px "GothamPro";
+    text-align: center;
+  }
+
+  //Proj-kind span
+  span.proj-kind {
+    display: block;
+    text-align: center;
+    font: 14px "GothamPro-Light";
+  }
+
+  //Wrap portfolio
+  div.wrap-portfolio {
+    position: relative;
+    margin-top: 120px;
+    div.wrap-img-run {
+      width: 100%;
+      height: 360px;
+      @include bgImage('../images/works/run.jpg');
+    }
+    div.wrap-img-cash {
+      width: 100%;
+      height: 720px;
+      @include bgImage('../images/works/cashPhone.jpg');
+    }
+    div.wrap-img-belier {
+      position: absolute;
+      bottom: 1px;
+      width: 100%;
+      height: 360px;
+      @include bgImage('../images/works/belier.jpg');
+    }
+    div.wrap-img-smart {
+      position: absolute;
+      bottom: 1px;
+      width: 100%;
+      height: 360px;
+      @include bgImage('../images/works/smart.jpg');
+    }
+    //Arrows span
+    .prev, .next {
+      position: absolute;
+      top: 43%;
+      width: 100px;
+      height: 100px;
+      background-color: rgba(0, 0, 0, .7);
+      z-index: 1;
+      padding: 30px;
+    }
+    .next {
+      right: 0;
+      padding-left: 40px
+    }
+  }
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

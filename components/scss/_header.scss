@@ -1,0 +1,44 @@
+@import "myVariables";
+
+header#header {
+  width: 100%;
+  color: $darkBlack;
+  padding: 20px 0;
+
+  //Adress section here
+  .location {
+    text-align: left;
+    color: $myBlack;
+
+    span {
+      display: block;
+      font: 12px "GothamPro";
+      line-height: 20px;
+      text-decoration: underline;
+      -moz-text-decoration-color: $myBlue; /* Code for Firefox */
+      text-decoration-color: $myBlue;
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  //Logo section here
+  div.logo {
+    text-align: center;
+  }
+
+  //Phone section here
+  .phone {
+    width: 110px;
+    height: 34px;
+    float: right;
+    color: $myBlack;
+    text-align: right;
+    span {
+      display: block;
+      font: 12px "GothamPro";
+      line-height: 20px;
+    }
+  }
+}

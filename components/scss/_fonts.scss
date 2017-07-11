@@ -1,0 +1,21 @@
+//This mixin is for adding to fonts.
+
+@mixin fontFace($family,$src,$style: normal,$weight: normal) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$src}.eot'); // IE9 compat
+		src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+			url('#{$src}.woff') format('woff'), // standards
+			url('#{$src}.ttf') format('truetype'), // Safari, Android, iOS
+			url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
+
+		font-style: $style;
+		font-weight: $weight;
+	}
+}
+
+@include fontFace('GothamPro', '../fonts/GothamPro/GothamPro');
+@include fontFace('GothamPro-Light', '../fonts/GothamPro-Light/GothamPro-Light');
+@include fontFace('GothamPro-Bold', '../fonts/GothamPro-Bold/GothamPro-Bold');
+@include fontFace('GothamPro-Black', '../fonts/GothamPro-Black/GothamPro-Black');
+@include fontFace('GothamPro-Medium', '../fonts/GothamPro-Medium/GothamPro-Medium');

@@ -1,0 +1,41 @@
+
+html, body {
+  font-family: "GothamPro" !important;
+}
+
+h1 {
+  font: 54px "GothamPro-Medium" !important;
+}
+
+h2 {
+  font: 33px/40px "GothamPro" !important;
+  span {
+    color: $myBlue;
+  }
+}
+
+h4 {
+  font: 18px "GothamPro-Medium" !important;
+}
+
+div.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+div.pad-g-0 {
+  padding: 0 !important;
+}
+
+.clearFix {
+  clear: both;
+  &:after, &:before {
+    content: '';
+    clear: both;
+  }
+}
+
+.marginBot {
+  margin-bottom: 63px;
+}

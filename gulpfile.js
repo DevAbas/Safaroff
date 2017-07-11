@@ -4,12 +4,14 @@ var gulp = require('gulp'),
     compass = require('gulp-compass'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
+    w3cjs = require('gulp-w3cjs'),
     connect = require('gulp-connect');
 
 var env,
     htmlSources,
     sassSources,
     jsSources,
+    fontSources,
     outputDir;
 
 env = process.env.NODE_ENV || 'development';
@@ -23,6 +25,7 @@ if(env === 'development') {
 htmlSources = outputDir + '*.html';
 sassSources = 'components/scss/style.scss';
 jsSources = 'components/scripts/*.js';
+fontSources = 'components/fonts/**/*.*';
 
 gulp.task('concat', function() {
   gulp.src(jsSources)
@@ -56,10 +59,22 @@ gulp.task('html', function() {
     .pipe(connect.reload())
 });
 
+gulp.task('font', function() {
+  gulp.src(fontSources)
+   .pipe(connect.reload())
+});
+
+gulp.task('w3cjs', function () {
+    gulp.src(htmlSources)
+        .pipe(w3cjs())
+        .pipe(w3cjs.reporter());
+});
+
 gulp.task('watch', function() {
   gulp.watch(jsSources, ['concat']);
   gulp.watch('components/scss/*.scss', ['compass']);
-  gulp.watch(htmlSources, ['html'])
+  gulp.watch(htmlSources, ['html','w3cjs']);
+  gulp.watch(fontSources, ['font']);
 });
 
-gulp.task('default', ['concat', 'compass', 'watch', 'html', 'connect']);
+gulp.task('default', ['concat', 'compass', 'watch', 'html', 'connect', 'w3cjs', 'font']);

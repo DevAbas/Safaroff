@@ -1,0 +1,21 @@
+@import "myVariables";
+
+section#our-services {
+  //FirstServices
+  div.firstServices {
+    margin-bottom: 70px;
+  }
+
+  //Icon-wrapper
+  div.icn-wrap {
+    margin-bottom: 45px;
+  }
+
+  p {
+    display: block;
+    width: 249px;
+    height: 54px;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+}

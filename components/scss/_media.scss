@@ -1,0 +1,21 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    header {
+      [class*="col-"] {
+          width: 100%;
+      }
+      span {
+        text-align: center;
+      }
+      .phone {
+        margin: 0 auto;
+        float: none !important;
+      }
+    }
+    .responCol:not(:last-child) {
+      margin-bottom: 50px;
+    }
+    span.figure {
+      font-size: 50px !important;
+    }
+}

@@ -4,6 +4,492 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+html, body {
+  font-family: "GothamPro" !important;
+}
+
+h1 {
+  font: 54px "GothamPro-Medium" !important;
+}
+
+h2 {
+  font: 33px/40px "GothamPro" !important;
+}
+h2 span {
+  color: #009E8E;
+}
+
+h4 {
+  font: 18px "GothamPro-Medium" !important;
+}
+
+div.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+div.pad-g-0 {
+  padding: 0 !important;
+}
+
+.clearFix {
+  clear: both;
+}
+.clearFix:after, .clearFix:before {
+  content: '';
+  clear: both;
+}
+
+.marginBot {
+  margin-bottom: 63px;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro/GothamPro.eot");
+  src: url("../fonts/GothamPro/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro.woff") format("woff"), url("../fonts/GothamPro/GothamPro.ttf") format("truetype"), url("../fonts/GothamPro/GothamPro.svg#GothamPro") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GothamPro-Light";
+  src: url("../fonts/GothamPro-Light/GothamPro-Light.eot");
+  src: url("../fonts/GothamPro-Light/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Light/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light/GothamPro-Light.ttf") format("truetype"), url("../fonts/GothamPro-Light/GothamPro-Light.svg#GothamPro-Light") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GothamPro-Bold";
+  src: url("../fonts/GothamPro-Bold/GothamPro-Bold.eot");
+  src: url("../fonts/GothamPro-Bold/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Bold/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold/GothamPro-Bold.ttf") format("truetype"), url("../fonts/GothamPro-Bold/GothamPro-Bold.svg#GothamPro-Bold") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GothamPro-Black";
+  src: url("../fonts/GothamPro-Black/GothamPro-Black.eot");
+  src: url("../fonts/GothamPro-Black/GothamPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Black/GothamPro-Black.woff") format("woff"), url("../fonts/GothamPro-Black/GothamPro-Black.ttf") format("truetype"), url("../fonts/GothamPro-Black/GothamPro-Black.svg#GothamPro-Black") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GothamPro-Medium";
+  src: url("../fonts/GothamPro-Medium/GothamPro-Medium.eot");
+  src: url("../fonts/GothamPro-Medium/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Medium/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium/GothamPro-Medium.ttf") format("truetype"), url("../fonts/GothamPro-Medium/GothamPro-Medium.svg#GothamPro-Medium") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+header#header {
+  width: 100%;
+  color: #000000;
+  padding: 20px 0;
+}
+header#header .location {
+  text-align: left;
+  color: #1a1a1a;
+}
+header#header .location span {
+  display: block;
+  font: 12px "GothamPro";
+  line-height: 20px;
+  text-decoration: underline;
+  -moz-text-decoration-color: #009E8E;
+  /* Code for Firefox */
+  text-decoration-color: #009E8E;
+  cursor: pointer;
+}
+header#header .location span:hover {
+  text-decoration: none;
+}
+header#header div.logo {
+  text-align: center;
+}
+header#header .phone {
+  width: 110px;
+  height: 34px;
+  float: right;
+  color: #1a1a1a;
+  text-align: right;
+}
+header#header .phone span {
+  display: block;
+  font: 12px "GothamPro";
+  line-height: 20px;
+}
+
+section#slogan {
+  padding: 150px 0 10px 0;
+}
+section#slogan div.firstSlog {
+  text-align: center;
+}
+section#slogan div.secondSlog {
+  width: 705px;
+  text-align: center;
+  margin: 85px auto;
+}
+section#slogan div.secondSlog p {
+  color: #7A7A7A;
+  margin: 0 !important;
+  font-size: 21px;
+  position: relative;
+}
+section#slogan div.secondSlog p:before, section#slogan div.secondSlog p:after {
+  content: '';
+  position: absolute;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 237px;
+  height: 1px;
+  background-color: #E0E0E0;
+}
+section#slogan div.secondSlog p:before {
+  margin-top: -45px;
+}
+
+section#our-services div.firstServices {
+  margin-bottom: 70px;
+}
+section#our-services div.icn-wrap {
+  margin-bottom: 45px;
+}
+section#our-services p {
+  display: block;
+  width: 249px;
+  height: 54px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+section#our-portfolio {
+  max-width: 100%;
+  padding-top: 165px;
+}
+section#our-portfolio span.figure {
+  display: block;
+  font: 79px "GothamPro";
+  text-align: center;
+}
+section#our-portfolio span.proj-kind {
+  display: block;
+  text-align: center;
+  font: 14px "GothamPro-Light";
+}
+section#our-portfolio div.wrap-portfolio {
+  position: relative;
+  margin-top: 120px;
+}
+section#our-portfolio div.wrap-portfolio div.wrap-img-run {
+  width: 100%;
+  height: 360px;
+  background-image: url(../images/works/run.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+section#our-portfolio div.wrap-portfolio div.wrap-img-cash {
+  width: 100%;
+  height: 720px;
+  background-image: url(../images/works/cashPhone.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+section#our-portfolio div.wrap-portfolio div.wrap-img-belier {
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  height: 360px;
+  background-image: url(../images/works/belier.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+section#our-portfolio div.wrap-portfolio div.wrap-img-smart {
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  height: 360px;
+  background-image: url(../images/works/smart.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+section#our-portfolio div.wrap-portfolio .prev, section#our-portfolio div.wrap-portfolio .next {
+  position: absolute;
+  top: 43%;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  padding: 30px;
+}
+section#our-portfolio div.wrap-portfolio .next {
+  right: 0;
+  padding-left: 40px;
+}
+section#our-portfolio a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+section#chose_us {
+  padding-top: 130px;
+}
+section#chose_us div.partnor {
+  width: 170px;
+  height: 90px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 90px;
+}
+section#chose_us div.partnor img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 170px;
+}
+section#chose_us .btn {
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+}
+section#chose_us .btn button {
+  border: 1px solid #009E8E;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  width: 250px;
+  height: 50px;
+  padding: 17px 40px;
+  background-color: transparent;
+  font: 16px "GothamPro-Light";
+  color: #009E8E;
+  -o-transition: background-color .2s ease-in-out;
+  -moz-transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  cursor: pointer;
+}
+section#chose_us .btn button:hover {
+  background-color: #009E8E;
+  color: white;
+}
+section#chose_us .btn button:focus {
+  outline: none;
+}
+
+section#teamMembers {
+  padding-top: 115px;
+}
+section#teamMembers .img-tm {
+  margin: 0 auto 23px auto;
+  width: 135px;
+  height: 135px;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+section#teamMembers .img-tm:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: #009E8E;
+  -webkit-border-radius: 100%;
+  -o-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  transition: all .5s ease-in-out;
+}
+section#teamMembers .img-tm:after {
+  content: attr(data-title);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font: 12px/16px "GothamPro-Light";
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition-delay: 5s;
+  /* Safari */
+  transition-delay: 5s;
+  display: none;
+}
+section#teamMembers .img-tm:hover:after {
+  display: block;
+  -webkit-transition-delay: 2s;
+  /* Safari */
+  transition-delay: 2s;
+}
+section#teamMembers .img-tm:hover:before {
+  width: 100%;
+  height: 100%;
+}
+section#teamMembers span.name-team {
+  text-align: center;
+  font: 13px "GothamPro";
+}
+
+section#happy_work {
+  margin-top: 50px;
+  padding-top: 64px;
+  padding-bottom: 60px;
+  min-height: 500px;
+  background-color: #f9f9f9;
+}
+section#happy_work form p {
+  font: 24px/44px "GothamPro";
+  text-align: left;
+  margin: 0 0 10px;
+}
+section#happy_work form p span {
+  position: relative;
+  outline: none;
+  display: inline-block;
+  min-width: 150px;
+  vertical-align: top;
+  text-align: left;
+}
+section#happy_work form p span input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #009e8e;
+  background: #f9f9f9;
+  margin-left: 10px;
+  font: 24px/44px "GothamPro";
+  min-width: 25px;
+  padding: 0;
+  cursor: default;
+  min-width: 150px;
+}
+section#happy_work form .btn-wrap {
+  width: 330px;
+  height: 40px;
+  margin: 86px auto 0 auto;
+}
+section#happy_work form .btn-wrap .fileContainer {
+  overflow: hidden;
+  position: relative;
+  text-decoration: underline;
+  text-decoration-color: #009E8E;
+  font: 14px "GothamPro-Light";
+  color: #009E8E;
+  margin: 0 0 0 30px;
+}
+section#happy_work form .btn-wrap .fileContainer [type=file] {
+  cursor: inherit;
+  display: block;
+  font-size: 999px;
+  filter: alpha(opacity=0);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+section#happy_work form .btn-wrap .submitButton {
+  border: 1px solid #009E8E;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  width: 170px;
+  height: 40px;
+  padding: 17px 40px;
+  background-color: #009E8E;
+  font: 16px "GothamPro-Light";
+  color: white;
+  -o-transition: background-color .2s ease-in-out;
+  -moz-transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  cursor: pointer;
+  font-size: 14px !important;
+}
+section#happy_work form .btn-wrap .submitButton:hover {
+  background-color: transparent;
+  color: #009E8E;
+}
+section#happy_work form .btn-wrap .submitButton:focus {
+  outline: none;
+}
+
+footer#footerSection {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+footer#footerSection .contact {
+  width: 166px;
+  height: 331px;
+  margin: 0 auto 125px auto;
+  text-align: center;
+  font: 13px "GothamPro-Light";
+}
+footer#footerSection .contact p.phone {
+  margin-bottom: 39px;
+}
+footer#footerSection .contact div.bear {
+  margin-bottom: 55px;
+}
+footer#footerSection div.lastFoot {
+  font: 12px "GothamPro-Light";
+}
+footer#footerSection div.lastFoot span, footer#footerSection div.lastFoot a {
+  margin-right: 47px;
+  text-decoration: underline;
+  text-decoration-color: #009E8E;
+}
+footer#footerSection div.lastFoot span:hover, footer#footerSection div.lastFoot a:hover {
+  text-decoration: none;
+}
+footer#footerSection div.lastFoot a {
+  color: #000 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  header [class*="col-"] {
+    width: 100%;
+  }
+  header span {
+    text-align: center;
+  }
+  header .phone {
+    margin: 0 auto;
+    float: none !important;
+  }
+
+  .responCol:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  span.figure {
+    font-size: 50px !important;
+  }
+}
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -341,7 +827,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "GothamPro", sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -4417,7 +4903,7 @@ a.badge:focus, a.badge:hover {
 }
 
 .progress-bar-striped {
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
   background-size: 1rem 1rem;
 }
 
@@ -4809,7 +5295,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "GothamPro", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4903,7 +5389,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "GothamPro", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;

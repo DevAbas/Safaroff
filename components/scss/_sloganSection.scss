@@ -1,0 +1,38 @@
+@import "myVariables";
+@import "myMixins";
+
+section#slogan {
+  padding: 150px 0 10px 0;
+
+  //First Slog
+  div.firstSlog {
+    text-align: center;
+  }
+
+  //Second slog
+  div.secondSlog {
+    width: 705px;
+    text-align: center;
+    margin: 85px auto;
+    p{
+      color: $lightGray;
+      margin: 0 !important;
+      font-size: 21px;
+      position: relative;
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        @include centerer;
+        display: block;
+        width: 237px;
+        height: 1px;
+        background-color: $lineColor;
+      }
+      &:before {
+        margin-top: -45px;
+      }
+    }
+  }
+}

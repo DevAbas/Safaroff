@@ -4,6 +4,22 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ @import "compass/css3";
+
+// My scss codes here
+@import "myVariables";
+@import "myMixins";
+@import "base";
+@import "fonts";
+@import "header";
+@import "sloganSection";
+@import "servicesSection";
+@import "portfolioSection";
+@import "choseSection";
+@import "team";
+@import "happySection";
+@import "footer";
+@import "media";
 
 // Core variables and mixins
 @import "../../bower_components/bootstrap/scss/variables";

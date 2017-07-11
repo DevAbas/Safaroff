@@ -1,0 +1,33 @@
+footer#footerSection {
+  padding-top: 100px;
+  padding-bottom: 30px;
+
+  .contact {
+    width: 166px;
+    height: 331px;
+    margin: 0 auto 125px auto;
+    text-align: center;
+    font: 13px "GothamPro-Light";
+    p.phone {
+      margin-bottom: 39px;
+    }
+    div.bear {
+      margin-bottom: 55px;
+    }
+  }
+
+  div.lastFoot {
+    font: 12px "GothamPro-Light";
+    span, a {
+      margin-right: 47px;
+      text-decoration: underline;
+      text-decoration-color: $myBlue;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    a {
+      color: #000 !important;
+    }
+  }
+}
