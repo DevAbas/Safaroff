@@ -6,6 +6,7 @@ section#happy_work {
   background-color: $lightWhite;
 
   form {
+    width: 100%;
     p{
       font: 24px/44px "GothamPro";
       text-align: left;
@@ -42,7 +43,7 @@ section#happy_work {
         text-decoration-color: $myBlue;
         font: 14px "GothamPro-Light";
         color: $myBlue;
-        margin: 0 0 0 30px;
+        margin: 13px 0 0 10px;
       }
 
       .fileContainer [type=file] {

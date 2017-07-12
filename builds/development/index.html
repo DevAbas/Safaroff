@@ -154,20 +154,18 @@
     </div>
     <div class="container-fluid">
       <div class="row wrap-portfolio">
-          <span class="prev">
-            <a href="#"><img src="images/prev.png" alt="Previous"></a>
-          </span>
-          <span class="next">
-            <a href="#"><img src="images/next.png" alt="Next"></a>
-          </span>
-          <div class="col-md-6 col-lg-6 col-xl-6 runBg"></div>
-          <div class="col-md-6 col-lg-6 col-xl-6 cashBg"></div>
-          <div class="bothWork">
-            <div class="row">
-              <div class="col-md-6 pad-g-0 belierBg"></div>
-              <div class="col-md-6 pad-g-0 smartBg"></div>
-            </div>
-          </div>
+        <div class="col-sm-6 pad-g-0 runBg">
+          <img class="img-responsive" src="images/works/run.jpg" alt="Running" />
+        </div>
+        <div class="col-sm-6 pad-g-0 cashBg">
+          <img class="img-responsive" src="images/works/cashPhone.jpg" alt="Cashing" />
+        </div>
+        <div class="col-sm-3 pad-g-0 belierBg">
+          <img class="img-responsive" src="images/works/belier.jpg" alt="Belier" />
+        </div>
+        <div class="col-sm-3 pad-g-0 smartBg">
+          <img class="img-responsive" src="images/works/smart.jpg" alt="Smart" />
+        </div>
       </div>
     </div>
   </section>
@@ -180,62 +178,62 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2 col-lg-2 col-xl-2 responCol">
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 responCol">
           <div class="partnor">
             <img src="images/partners/azbb.png" alt="Azerbaycan Beynalxalq Bank">
           </div>
         </div>
-        <div class="col-md-2 col-lg-2 col-xl-2 responCol">
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 responCol fadeIn">
           <div class="partnor">
             <img src="images/partners/rytn.png" alt="RYTN">
           </div>
         </div>
-        <div class="col-md-2 col-lg-2 col-xl-2 responCol">
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 responCol fadeIn">
           <div class="partnor">
             <img src="images/partners/unibank.png" alt="UNIBANK">
           </div>
         </div>
-        <div class="col-md-2 col-lg-2 col-xl-2 responCol">
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 responCol fadeIn">
           <div class="partnor">
             <img src="images/partners/nar.png" alt="Nar Mobile">
           </div>
         </div>
-        <div class="col-md-2 col-lg-2 col-xl-2 responCol">
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 responCol fadeIn">
           <div class="partnor">
             <img src="images/partners/baku2015.png" alt="BAKU 2015">
           </div>
         </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 responCol">
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 responCol fadeIn">
             <div class="partnor">
               <img src="images/partners/bakcell.png" alt="BAKCELL">
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 responCol">
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 responCol fadeIn">
             <div class="partnor">
               <img src="images/partners/azercosmos.png" alt="AZERCOSMOS">
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 responCol">
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 responCol fadeIn">
             <div class="partnor">
               <img src="images/partners/shahdag.png" alt="SHAHDAG">
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 responCol">
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 responCol fadeIn">
             <div class="partnor">
               <img src="images/partners/azdiu.png" alt="AZDIU">
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 responCol">
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 responCol fadeIn">
             <div class="partnor">
               <img src="images/partners/italdizain.png" alt="ITALDIZAIN">
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 responCol">
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 responCol fadeIn">
             <div class="partnor">
               <img src="images/partners/ubm.png" alt="UBM">
             </div>
           </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 responCol">
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 responCol fadeIn">
             <div class="partnor">
               <img src="images/partners/bakifond.png" alt="BAKI FOND">
             </div>
@@ -351,11 +349,17 @@
             Оставляю номер телефона для обратной связи <span><input type="text" size="9"></span>.
           </p>
           <div class="btn-wrap">
-            <button type="button" class="submitButton">ОТПРАВИТЬ</button>
-            <label class="fileContainer">
-                Приложить файл
-                <input type="file"/>
-            </label>
+            <div class="row">
+              <div class="col-md-6 pad-g-0 center-responsive">
+                <button type="button" class="submitButton">ОТПРАВИТЬ</button>
+              </div>
+              <div class="col-md-6 pad-g-0 center-responsive">
+                <label class="fileContainer">
+                  Приложить файл
+                  <input type="file"/>
+                </label>
+              </div>
+            </div>
           </div>
         </form>
       </div>
@@ -398,13 +402,13 @@
       </div>
       <div class="row lastFoot">
         <div class="col-md-8">
-          <span>FB.COM/SAFAROFFAGENCY</span>
-          <span>@SAFAROFFAGENCY</span>
-          <span>AGENCY@SAFAROFF.COM</span>
+          <span class="responsiveBlock">FB.COM/SAFAROFFAGENCY</span>
+          <span class="responsiveBlock">@SAFAROFFAGENCY</span>
+          <span class="responsiveBlock">AGENCY@SAFAROFF.COM</span>
         </div>
-        <div class="col-md-4">
-          <a href="#">AZERBAYCANCA</a>
-          <a href="#">РУССКИЙ</a>
+        <div class="col-md-4 responCol">
+          <a href="#" class="responsiveBlock">AZERBAYCANCA</a>
+          <a href="#" class="responsiveBlock">РУССКИЙ</a>
         </div>
       </div>
     </div>

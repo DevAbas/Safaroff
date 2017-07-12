@@ -21,52 +21,24 @@ section#our-portfolio {
     text-align: center;
     font: 14px "GothamPro-Light";
   }
-
-  //Wrap portfolio
-  .wrap-portfolio {
-    position: relative;
-    min-height: 720px;
-    .runBg {
-      @include bgImage('../images/works/run.jpg');
-      height: 360px;
-    }
-    .cashBg {
-      @include bgImage('../images/works/cashPhone.jpg');
-      height: 720px;
-    }
-    .bothWork {
-      width: 50%;
+    .wrap-portfolio {
       position: relative;
-      .belierBg {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        @include bgImage('../images/works/belier.jpg');
-        height: 360px;
-      }
-      .smartBg {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        @include bgImage('../images/works/smart.jpg');
-        height: 360px;
-      }
+      min-height: 360px;
+        .pad-g-0 {
+          img {
+            width: 100%;
+          }
+        }
+        .belierBg{
+          position: absolute;
+          bottom: 0;
+        }
+        .smartBg {
+          position: absolute;
+          bottom: 0;
+          right: 50%;
+        }
     }
-    //Arrows span
-    .prev, .next {
-      position: absolute;
-      top: 43%;
-      width: 100px;
-      height: 100px;
-      background-color: rgba(0, 0, 0, .7);
-      z-index: 1;
-      padding: 30px;
-    }
-    .next {
-      right: 0;
-      padding-left: 40px
-    }
-  }
   a {
     display: block;
     width: 100%;

@@ -184,58 +184,19 @@ section#our-portfolio span.proj-kind {
 }
 section#our-portfolio .wrap-portfolio {
   position: relative;
-  min-height: 720px;
+  min-height: 360px;
 }
-section#our-portfolio .wrap-portfolio .runBg {
-  background-image: url(../images/works/run.jpg);
-  background-position: 100% auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 360px;
+section#our-portfolio .wrap-portfolio .pad-g-0 img {
+  width: 100%;
 }
-section#our-portfolio .wrap-portfolio .cashBg {
-  background-image: url(../images/works/cashPhone.jpg);
-  background-position: 100% auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 720px;
-}
-section#our-portfolio .wrap-portfolio .bothWork {
-  width: 50%;
-  position: relative;
-}
-section#our-portfolio .wrap-portfolio .bothWork .belierBg {
+section#our-portfolio .wrap-portfolio .belierBg {
   position: absolute;
-  left: 0;
   bottom: 0;
-  background-image: url(../images/works/belier.jpg);
-  background-position: 100% auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 360px;
 }
-section#our-portfolio .wrap-portfolio .bothWork .smartBg {
+section#our-portfolio .wrap-portfolio .smartBg {
   position: absolute;
-  right: 0;
   bottom: 0;
-  background-image: url(../images/works/smart.jpg);
-  background-position: 100% auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 360px;
-}
-section#our-portfolio .wrap-portfolio .prev, section#our-portfolio .wrap-portfolio .next {
-  position: absolute;
-  top: 43%;
-  width: 100px;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-  padding: 30px;
-}
-section#our-portfolio .wrap-portfolio .next {
-  right: 0;
-  padding-left: 40px;
+  right: 50%;
 }
 section#our-portfolio a {
   display: block;
@@ -313,8 +274,8 @@ section#teamMembers .img-tm:before {
   content: '';
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   width: 0;
   height: 0;
   background-color: #009E8E;
@@ -322,7 +283,7 @@ section#teamMembers .img-tm:before {
   -o-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 section#teamMembers .img-tm:after {
   content: attr(data-title);
@@ -348,6 +309,8 @@ section#teamMembers .img-tm:hover:after {
   transition-delay: 2s;
 }
 section#teamMembers .img-tm:hover:before {
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -362,6 +325,9 @@ section#happy_work {
   padding-bottom: 60px;
   min-height: 500px;
   background-color: #f9f9f9;
+}
+section#happy_work form {
+  width: 100%;
 }
 section#happy_work form p {
   font: 24px/44px "GothamPro";
@@ -400,7 +366,7 @@ section#happy_work form .btn-wrap .fileContainer {
   text-decoration-color: #009E8E;
   font: 14px "GothamPro-Light";
   color: #009E8E;
-  margin: 0 0 0 30px;
+  margin: 13px 0 0 10px;
 }
 section#happy_work form .btn-wrap .fileContainer [type=file] {
   cursor: inherit;
@@ -487,24 +453,50 @@ footer#footerSection div.lastFoot a {
     float: none !important;
   }
 
+  section#slogan {
+    padding: 100px 0 10px 0;
+  }
+
   .responCol:not(:last-child) {
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
   }
 
   span.figure {
     font-size: 50px !important;
   }
 
-  div.partnor {
-    margin: 0 auto !important;
+  .fadeIn {
+    display: none;
   }
 
-  .cashBg {
+  div.partnor {
+    width: 100px !important;
+    margin: 0 auto !important;
+  }
+  div.partnor img {
+    max-width: 100px !important;
+  }
+
+  .bothWork {
+    width: 100%;
+  }
+
+  .center-responsive {
+    text-align: center;
+  }
+  .center-responsive .cashBg {
     height: 360px !important;
   }
 
-  .smartBg {
-    right: -100% !important;
+  .btn-wrap {
+    width: 170px;
+  }
+
+  .responsiveBlock {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-right: 0 !important;
   }
 }
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */

@@ -7,7 +7,7 @@
 //Mixin for background-image
 @mixin bgImage($imgPath){
   background-image: url(#{$imgPath});
-  background-position: 100% auto;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -12,21 +12,44 @@
         float: none !important;
       }
     }
+    section#slogan {
+      padding: 100px 0 10px 0;
+    }
     .responCol:not(:last-child) {
-      margin-bottom: 50px;
+      margin: 0 auto 50px auto;
     }
     span.figure {
       font-size: 50px !important;
     }
+    .fadeIn {
+      display: none;
+    }
     div.partnor {
+      width: 100px !important;
       margin: 0 auto !important;
+      img {
+        max-width: 100px !important;
+      }
+    }
+    .bothWork {
+      width: 100%;
     }
 
-    .cashBg {
-      height: 360px !important;
+    .center-responsive {
+      text-align: center;
+      .cashBg {
+        height: 360px !important;
+      }
     }
-    .smartBg {
-      right: -100% !important;
+    .btn-wrap {
+      width: 170px;
+    }
+
+    .responsiveBlock {
+      display: block;
+      margin-bottom: 20px;
+      text-align: center;
+      margin-right: 0 !important;
     }
 
 }
