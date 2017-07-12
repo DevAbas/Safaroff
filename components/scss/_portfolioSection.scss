@@ -4,6 +4,10 @@ section#our-portfolio {
   max-width: 100%;
   padding-top: 165px;
 
+  //Numbers
+  .numbers {
+    margin-bottom: 120px;
+  }
   //Figure span
   span.figure {
     display: block;
@@ -19,32 +23,34 @@ section#our-portfolio {
   }
 
   //Wrap portfolio
-  div.wrap-portfolio {
+  .wrap-portfolio {
     position: relative;
-    margin-top: 120px;
-    div.wrap-img-run {
-      width: 100%;
-      height: 360px;
+    min-height: 720px;
+    .runBg {
       @include bgImage('../images/works/run.jpg');
+      height: 360px;
     }
-    div.wrap-img-cash {
-      width: 100%;
-      height: 720px;
+    .cashBg {
       @include bgImage('../images/works/cashPhone.jpg');
+      height: 720px;
     }
-    div.wrap-img-belier {
-      position: absolute;
-      bottom: 1px;
-      width: 100%;
-      height: 360px;
-      @include bgImage('../images/works/belier.jpg');
-    }
-    div.wrap-img-smart {
-      position: absolute;
-      bottom: 1px;
-      width: 100%;
-      height: 360px;
-      @include bgImage('../images/works/smart.jpg');
+    .bothWork {
+      width: 50%;
+      position: relative;
+      .belierBg {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        @include bgImage('../images/works/belier.jpg');
+        height: 360px;
+      }
+      .smartBg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include bgImage('../images/works/smart.jpg');
+        height: 360px;
+      }
     }
     //Arrows span
     .prev, .next {

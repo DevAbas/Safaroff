@@ -10251,3 +10251,13 @@ if ( !noGlobal ) {
 
 return jQuery;
 } );
+
+$(function(){
+
+  var $img = $('.responsiveImg');
+
+  $(window).resize(function(){
+    var newWidth = $img.outerWidth();
+  });
+
+});
