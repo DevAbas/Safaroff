@@ -11,7 +11,11 @@ section#teamMembers {
     background-color: $lightWhite;
     position: relative;
     overflow: hidden;
-    transition: all .5s ease;
+    transition: all 2s ease;
+    -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -o-transform: scale(0,0);
+    transform: scale(0,0);
     &:before {
       content: '';
       display: block;
@@ -36,8 +40,6 @@ section#teamMembers {
       font: 12px/16px "GothamPro-Light";
       color: #fff;
       overflow: hidden;
-      -webkit-transition-delay: 5s; /* Safari */
-      transition-delay: 5s;
       display: none;
     }
     &:hover {
@@ -53,6 +55,12 @@ section#teamMembers {
         height: 100%;
       }
     }
+  }
+  .fade-in {
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    -o-transform: scale(1,1);
+    transform: scale(1,1);
   }
 
   span.name-team {

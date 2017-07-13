@@ -21,9 +21,6 @@
     span.figure {
       font-size: 50px !important;
     }
-    .fadeIn {
-      display: none;
-    }
     div.partnor {
       width: 100px !important;
       margin: 0 auto !important;
@@ -50,6 +47,18 @@
       margin-bottom: 20px;
       text-align: center;
       margin-right: 0 !important;
+    }
+
+    .fadeIn {
+      display: none;
+    }
+
+    .arrow {
+      width: 50px !important;
+      height: 50px !important;
+      img {
+        width: 15px !important;
+      }
     }
 
 }

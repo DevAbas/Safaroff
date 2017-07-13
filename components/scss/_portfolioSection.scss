@@ -24,6 +24,31 @@ section#our-portfolio {
     .wrap-portfolio {
       position: relative;
       min-height: 360px;
+      span.nextWrap,.prevWrap {
+        z-index: 1;
+        position: absolute;
+        top: 43%;
+        a {
+          display: block;
+          position: relative;
+          width: 100px;
+          height: 100px;
+          background-color: rgba(0,0,0,.5);
+          transition: all .5s ease-in-out;
+          text-align: center;
+          img {
+            position: absolute;
+            top: 50%;
+            @include centerer();
+          }
+          &:hover {
+            background-color: #222;
+          }
+        }
+      }
+      span.nextWrap {
+        right: 0;
+      }
         .pad-g-0 {
           img {
             width: 100%;

@@ -3,6 +3,8 @@
 
 section#chose_us {
   padding-top: 130px;
+  padding-bottom: 10px;
+  overflow: hidden;
 
   //Partnors section
   div.partnor {
@@ -11,6 +13,12 @@ section#chose_us {
     text-align: center;
     position: relative;
     margin-bottom: 90px;
+    opacity: 0;
+    -webkit-transform: translate(50px, 150px);
+    -moz-transform: translate(50px, 150px);
+    -o-transform: translate(50px, 150px);
+    transform: translate(50px, 150px);
+    transition: all 1s ease-out;
     img {
       position: absolute;
       left: 0;
@@ -20,6 +28,13 @@ section#chose_us {
       margin: auto;
       max-width: 170px;
     }
+  }
+  .fade-in {
+    opacity: 1 !important;
+    -webkit-transform: translate(0, 0) !important;
+    -moz-transform: translateY(0, 0) !important;
+    -o-transform: translateY(0, 0) !important;
+    transform: translateY(0, 0) !important;
   }
   .btn {
     width: 250px;

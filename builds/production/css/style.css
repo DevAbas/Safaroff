@@ -141,6 +141,9 @@ section#slogan div.secondSlog p:before, section#slogan div.secondSlog p:after {
   margin-top: 45px;
   margin-bottom: 45px;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   display: block;
   width: 237px;
@@ -156,6 +159,19 @@ section#our-services div.firstServices {
 }
 section#our-services div.icn-wrap {
   margin-bottom: 45px;
+  opacity: 0;
+  -webkit-transform: translate(50px, 100px);
+  -moz-transform: translate(50px, 100px);
+  -o-transform: translate(50px, 100px);
+  transform: translate(50px, 100px);
+  transition: all 1s ease-out;
+}
+section#our-services .fade-in {
+  opacity: 1 !important;
+  -webkit-transform: translate(0, 0) !important;
+  -moz-transform: translateY(0, 0) !important;
+  -o-transform: translateY(0, 0) !important;
+  transform: translateY(0, 0) !important;
 }
 section#our-services p {
   display: block;
@@ -186,6 +202,35 @@ section#our-portfolio .wrap-portfolio {
   position: relative;
   min-height: 360px;
 }
+section#our-portfolio .wrap-portfolio span.nextWrap, section#our-portfolio .wrap-portfolio .prevWrap {
+  z-index: 1;
+  position: absolute;
+  top: 43%;
+}
+section#our-portfolio .wrap-portfolio span.nextWrap a, section#our-portfolio .wrap-portfolio .prevWrap a {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all .5s ease-in-out;
+  text-align: center;
+}
+section#our-portfolio .wrap-portfolio span.nextWrap a img, section#our-portfolio .wrap-portfolio .prevWrap a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+section#our-portfolio .wrap-portfolio span.nextWrap a:hover, section#our-portfolio .wrap-portfolio .prevWrap a:hover {
+  background-color: #222;
+}
+section#our-portfolio .wrap-portfolio span.nextWrap {
+  right: 0;
+}
 section#our-portfolio .wrap-portfolio .pad-g-0 img {
   width: 100%;
 }
@@ -206,6 +251,8 @@ section#our-portfolio a {
 
 section#chose_us {
   padding-top: 130px;
+  padding-bottom: 10px;
+  overflow: hidden;
 }
 section#chose_us div.partnor {
   width: 170px;
@@ -213,6 +260,12 @@ section#chose_us div.partnor {
   text-align: center;
   position: relative;
   margin-bottom: 90px;
+  opacity: 0;
+  -webkit-transform: translate(50px, 150px);
+  -moz-transform: translate(50px, 150px);
+  -o-transform: translate(50px, 150px);
+  transform: translate(50px, 150px);
+  transition: all 1s ease-out;
 }
 section#chose_us div.partnor img {
   position: absolute;
@@ -222,6 +275,13 @@ section#chose_us div.partnor img {
   bottom: 0;
   margin: auto;
   max-width: 170px;
+}
+section#chose_us .fade-in {
+  opacity: 1 !important;
+  -webkit-transform: translate(0, 0) !important;
+  -moz-transform: translateY(0, 0) !important;
+  -o-transform: translateY(0, 0) !important;
+  transform: translateY(0, 0) !important;
 }
 section#chose_us .btn {
   width: 250px;
@@ -268,7 +328,11 @@ section#teamMembers .img-tm {
   background-color: #f9f9f9;
   position: relative;
   overflow: hidden;
-  transition: all .5s ease;
+  transition: all 2s ease;
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  transform: scale(0, 0);
 }
 section#teamMembers .img-tm:before {
   content: '';
@@ -297,9 +361,6 @@ section#teamMembers .img-tm:after {
   font: 12px/16px "GothamPro-Light";
   color: #fff;
   overflow: hidden;
-  -webkit-transition-delay: 5s;
-  /* Safari */
-  transition-delay: 5s;
   display: none;
 }
 section#teamMembers .img-tm:hover:after {
@@ -314,6 +375,12 @@ section#teamMembers .img-tm:hover:before {
   width: 100%;
   height: 100%;
 }
+section#teamMembers .fade-in {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
 section#teamMembers span.name-team {
   text-align: center;
   font: 13px "GothamPro";
@@ -325,9 +392,15 @@ section#happy_work {
   padding-bottom: 60px;
   min-height: 500px;
   background-color: #f9f9f9;
+  overflow: hidden;
 }
 section#happy_work form {
   width: 100%;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translateX(150%);
+  -moz-transform: translateX(150%);
+  -o-transform: translateX(150%);
+  transform: translateX(150%);
 }
 section#happy_work form p {
   font: 24px/44px "GothamPro";
@@ -407,6 +480,12 @@ section#happy_work form .btn-wrap .submitButton:hover {
 section#happy_work form .btn-wrap .submitButton:focus {
   outline: none;
 }
+section#happy_work .fade-in {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
 
 footer#footerSection {
   padding-top: 100px;
@@ -439,6 +518,21 @@ footer#footerSection div.lastFoot span:hover, footer#footerSection div.lastFoot 
 footer#footerSection div.lastFoot a {
   color: #000 !important;
 }
+footer#footerSection .bear {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  transition: all 1s ease-in-out;
+}
+footer#footerSection .fade-in {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -463,10 +557,6 @@ footer#footerSection div.lastFoot a {
 
   span.figure {
     font-size: 50px !important;
-  }
-
-  .fadeIn {
-    display: none;
   }
 
   div.partnor {
@@ -497,6 +587,18 @@ footer#footerSection div.lastFoot a {
     margin-bottom: 20px;
     text-align: center;
     margin-right: 0 !important;
+  }
+
+  .fadeIn {
+    display: none;
+  }
+
+  .arrow {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .arrow img {
+    width: 15px !important;
   }
 }
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */

@@ -9,6 +9,19 @@ section#our-services {
   //Icon-wrapper
   div.icn-wrap {
     margin-bottom: 45px;
+    opacity: 0;
+    -webkit-transform: translate(50px, 100px);
+    -moz-transform: translate(50px, 100px);
+    -o-transform: translate(50px, 100px);
+    transform: translate(50px, 100px);
+    transition: all 1s ease-out;
+  }
+  .fade-in {
+    opacity: 1 !important;
+    -webkit-transform: translate(0, 0) !important;
+    -moz-transform: translateY(0, 0) !important;
+    -o-transform: translateY(0, 0) !important;
+    transform: translateY(0, 0) !important;
   }
 
   p {

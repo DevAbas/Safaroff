@@ -1,13 +1,10 @@
-$(document).ready(function(){
-
-  var $fadeIn = $('.fadeIn'),
-      showAll = $('.showAll');
-
-      showAll.click(function(){
-        if($(window).width() <= 768) {
-          $fadeIn.slideToggle("slow");
-        }
-        return false;
-      });
-
-});
+onResize = function() {
+    if($(window).width() < 768) {
+        $('.showAll').on('click', function(event) {
+            $('.fadeIn').toggle('slow');
+        })
+    } else {
+        $('.showAll').off('click');
+    }
+}
+$(document).ready(onResize);

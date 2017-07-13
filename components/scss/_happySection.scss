@@ -4,9 +4,15 @@ section#happy_work {
   padding-bottom: 60px;
   min-height: 500px;
   background-color: $lightWhite;
+  overflow: hidden;
 
   form {
     width: 100%;
+    transition: all 1s ease-in-out;
+    -webkit-transform: translateX(150%);
+    -moz-transform: translateX(150%);
+    -o-transform: translateX(150%);
+    transform: translateX(150%);
     p{
       font: 24px/44px "GothamPro";
       text-align: left;
@@ -64,5 +70,11 @@ section#happy_work {
         font-size: 14px !important;
       }
     }
+  }
+  .fade-in {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
   }
 }
